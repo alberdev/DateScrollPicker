@@ -33,10 +33,16 @@
 <br/>
 
 <p align="center">
-   You can use <b>DateScrollPicker</b> as a calendar with scroll date views. This collection has infinite date cells with animated selection. You can customize all this cells with your own fonts and colors with <b>DateScrollPickerFormat</b>. Take a look to next params and learn how to use ;)
+   You can use <b>DateScrollPicker</b> as a calendar with scroll date views. This collection has infinite date cells with animated selection. Customize all these cells with your own fonts and colors with <b>DateScrollPickerFormat</b>. Take a look to next params and learn how to use ;)
 </p>
 
 <br/>
+
+<p align="center">
+<div style="width: 250px; height: 439px; background-image: url('https://raw.githubusercontent.com/alberdev/DateScrollPicker/master/Images/iphone6.png')">
+<img src="https://raw.githubusercontent.com/alberdev/DateScrollPicker/master/Images/video.gif" alt="DateScrollPicker" title="DateScrollPicker demo">
+</div>
+</p>
 
 <p align="center" >
 <img src="https://raw.githubusercontent.com/alberdev/DateScrollPicker/master/Images/video.gif" alt="DateScrollPicker" title="DateScrollPicker demo">
