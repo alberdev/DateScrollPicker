@@ -4,7 +4,7 @@
 
 <p align="center">
    <a href="https://cocoapods.org/pods/DateScrollPicker">
-      <img src="https://img.shields.io/cocoapods/v/DateScrollPicker.svg?style=flat&colorB=008B60" alt="Version">
+      <img src="https://img.shields.io/cocoapods/v/DateScrollPicker.svg?style=flat&colorB=ed1e79" alt="Version">
    </a>
    <!--
    <a href="https://github.com/Carthage/Carthage">
@@ -13,6 +13,9 @@
    -->
    <a href="https://cocoapods.org/pods/DateScrollPicker">
       <img src="https://img.shields.io/cocoapods/l/DateScrollPicker.svg?style=flat)" alt="License">
+   </a>
+   <a href="https://developer.apple.com/swift/">
+      <img src="https://img.shields.io/badge/Swift-5.0-blue.svg?style=flat&colorB=ed1e79" alt="Swift 5.0">
    </a>
    <a href="https://cocoapods.org/pods/DateScrollPicker">
       <img src="https://img.shields.io/cocoapods/p/DateScrollPicker.svg?style=flat" alt="Platform">
@@ -23,11 +26,9 @@
    </a>
    -->
    <a href="https://twitter.com/alberdev/">
-      <img src="https://img.shields.io/badge/Twitter-@alberdev-blue.svg?style=flat" alt="Twitter">
+      <img src="https://img.shields.io/badge/Twitter-@alberdev-blue.svg?style=flat&colorB=ed1e79" alt="Twitter">
    </a>
-   <a href="https://developer.apple.com/swift/">
-      <img src="https://img.shields.io/badge/Swift-5.0-orange.svg?style=flat" alt="Swift 5.0">
-   </a>
+   
 </p>
 
 <br/>
