@@ -38,10 +38,8 @@
 
 <br/>
 
-<p align="center">
-<div style="width: 400px; height: 702px; background-image: url('https://github.com/alberdev/DateScrollPicker/blob/master/Images/iphone6.png?raw=true'); background-size: 400px 702px;">
-  <img src="https://raw.githubusercontent.com/alberdev/DateScrollPicker/master/Images/video.gif" alt="DateScrollPicker" title="DateScrollPicker demo" style="padding: 80px 61px;" width="269">
-</div>
+<p align="center" >
+<img src="https://raw.githubusercontent.com/alberdev/DateScrollPicker/master/Images/video.gif" alt="DateScrollPicker" title="DateScrollPicker demo">
 </p>
 
 # DateScrollPicker
