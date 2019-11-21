@@ -18,7 +18,7 @@
       <img src="https://img.shields.io/badge/Swift-5.0-blue.svg?style=flat&colorB=ed1e79" alt="Swift 5.0">
    </a>
    <a href="https://cocoapods.org/pods/DateScrollPicker">
-      <img src="https://img.shields.io/cocoapods/p/DateScrollPicker.svg?style=flat" alt="Platform">
+      <img src="https://img.shields.io/cocoapods/p/DateScrollPicker.svg?style=flat&colorB=ed1e79" alt="Platform">
    </a>
    <!--
    <a href="https://alberdev.github.io/DateScrollPicker">
@@ -26,7 +26,7 @@
    </a>
    -->
    <a href="https://twitter.com/alberdev/">
-      <img src="https://img.shields.io/badge/Twitter-@alberdev-blue.svg?style=flat&colorB=ed1e79" alt="Twitter">
+      <img src="https://img.shields.io/badge/Twitter-@alberdev-blue.svg?style=flat&colorB=30CEF2" alt="Twitter">
    </a>
    
 </p>
