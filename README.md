@@ -2,17 +2,53 @@
    <img width="500" src="https://raw.githubusercontent.com/alberdev/DateScrollPicker/master/Images/header_DateScrollPicker.png" alt="DateScrollPicker  Logo">
 </p>
 
+<p align="center">
+   <a href="https://cocoapods.org/pods/DateScrollPicker">
+      <img src="https://img.shields.io/cocoapods/v/DateScrollPicker.svg?style=flat&colorB=008B60" alt="Version">
+   </a>
+   <a href="https://github.com/alberdev/DateScrollPicker/actions?query=workflow%3ACI">
+      <img src="https://github.com/alberdev/DateScrollPicker/workflows/CI/badge.svg" alt="CI Status">
+   </a>
+   <!--
+   <a href="https://github.com/Carthage/Carthage">
+      <img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat" alt="Carthage Compatible">
+   </a>
+   -->
+   <br/>
+   <a href="https://cocoapods.org/pods/DateScrollPicker">
+      <img src="https://img.shields.io/cocoapods/l/DateScrollPicker.svg?style=flat)" alt="License">
+   </a>
+   <a href="https://cocoapods.org/pods/DateScrollPicker">
+      <img src="https://img.shields.io/cocoapods/p/DateScrollPicker.svg?style=flat" alt="Platform">
+   </a>
+   <a href="https://alberdev.github.io/DateScrollPicker">
+      <img src="https://github.com/alberdev/DateScrollPicker/blob/gh-pages/badge.svg" alt="Documentation">
+   </a>
+   <a href="https://twitter.com/alberdev/">
+      <img src="https://img.shields.io/badge/Twitter-@alberdev-blue.svg?style=flat" alt="Twitter">
+   </a>
+   <a href="https://developer.apple.com/swift/">
+      <img src="https://img.shields.io/cocoapods/v/DateScrollPicker.svg?style=flat&colorB=008B60" alt="Swift 5.0">
+   </a>
+</p>
+
+<p align="center" >
+<img src="https://raw.githubusercontent.com/alberdev/DateScrollPicker/master/Images/video.gif" alt="DateScrollPicker" title="DateScrollPicker demo">
+</p>
+
 # DateScrollPicker
 
-[![Version](https://img.shields.io/cocoapods/v/DateScrollPicker.svg?style=flat&colorB=008B60)](https://cocoapods.org/pods/DateScrollPicker)
-[![License](https://img.shields.io/cocoapods/l/DateScrollPicker.svg?style=flat)](https://cocoapods.org/pods/DateScrollPicker)
-[![Platform](https://img.shields.io/cocoapods/p/DateScrollPicker.svg?style=flat)](https://cocoapods.org/pods/DateScrollPicker)
-![Swift](https://img.shields.io/badge/%20in-swift%205.0-orange.svg?style=flat&colorB=008B60)
+You can use `DateScrollPicker` as a calendar with scroll date views. This collection has infinite date cells with animated selection. You can customize all this cells with your own fonts and colors with `DateScrollPickerFormat`. Take a look to next params and learn how to use ;)
+
+- [x] Awesome infinite date picker
+- [x] Totally customizable
+- [x] Animation selection
+- [x] Show custom data for each date
+- [x] Easy usage
+- [x] Supports iOS, written in Swift 5
 
 ## Table of Contents
 
-- [Description](#description)
-- [Example](#example)
 - [Installation](#installation)
 - [Usage](#usage)
   - [UIView in your xib / storyboard](#uiviewinyourxib/storyboard)
@@ -25,24 +61,6 @@
 - [Contributing](#contributing)
 - [License](#license)
 
-## Description
-
-You can use `DateScrollPicker` as a calendar with scroll date views. This collection has infinite date cells with animated selection. You can customize all this cells with your own fonts and colors with `DateScrollPickerFormat`. Take a look to next params and learn how to use ;)
-
-- [x] Awesome infinite date picker
-- [x] Totally customizable
-- [x] Animation selection
-- [x] Show custom data for each date
-- [x] Easy usage
-- [x] Supports iOS, written in Swift 5
-
-## Example
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-<p align="center" >
-<img src="https://raw.githubusercontent.com/alberdev/DateScrollPicker/master/Images/video.gif" alt="DateScrollPicker" title="DateScrollPicker demo">
-</p>
 
 ## Installation
 

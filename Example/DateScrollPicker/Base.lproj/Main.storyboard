@@ -41,7 +41,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jnv-gF-2Ov" customClass="DateScrollPicker" customModule="DateScrollPicker">
-                                <rect key="frame" x="10" y="190" width="394" height="100"/>
+                                <rect key="frame" x="10" y="176" width="394" height="100"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="GyC-9t-TU2"/>
@@ -53,28 +53,28 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="With DateScrollPicker you can scroll and select days. Implement delegate methods and get slider events. Fully customizable!!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v9H-eo-wxC">
-                                <rect key="frame" x="20" y="128" width="374" height="42"/>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scroll and select days. Implement delegate methods and get slider events. Fully customizable!!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v9H-eo-wxC">
+                                <rect key="frame" x="20" y="128" width="374" height="28"/>
                                 <fontDescription key="fontDescription" name="Volte-Regular2" family="Volte " pointSize="14"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6pp-Zb-U0Q" customClass="DateScrollPicker" customModule="DateScrollPicker">
-                                <rect key="frame" x="10" y="310" width="394" height="100"/>
+                                <rect key="frame" x="10" y="286" width="394" height="100"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="Hrd-o0-q8Z"/>
                                 </constraints>
                             </view>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yos-5z-WDl" customClass="DateScrollPicker" customModule="DateScrollPicker">
-                                <rect key="frame" x="10" y="430" width="394" height="60"/>
+                                <rect key="frame" x="10" y="396" width="394" height="60"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="im9-bc-aFd"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vLa-ds-TUH">
-                                <rect key="frame" x="0.0" y="520" width="414" height="417"/>
+                                <rect key="frame" x="0.0" y="476" width="414" height="461"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13 de Abril de 2019" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XGi-Kh-VOo">
                                         <rect key="frame" x="8" y="27" width="398" height="24"/>
@@ -107,18 +107,18 @@
                             <constraint firstItem="6pp-Zb-U0Q" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="BVI-Ja-LNd"/>
                             <constraint firstItem="vLa-ds-TUH" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="HoP-HC-OLe"/>
                             <constraint firstItem="fnc-lX-p63" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="JJD-Up-6ee"/>
-                            <constraint firstItem="6pp-Zb-U0Q" firstAttribute="top" secondItem="Jnv-gF-2Ov" secondAttribute="bottom" constant="20" id="Kl2-Om-dtY"/>
+                            <constraint firstItem="6pp-Zb-U0Q" firstAttribute="top" secondItem="Jnv-gF-2Ov" secondAttribute="bottom" constant="10" id="Kl2-Om-dtY"/>
                             <constraint firstItem="Jnv-gF-2Ov" firstAttribute="top" secondItem="v9H-eo-wxC" secondAttribute="bottom" constant="20" id="PBE-qX-0Xe"/>
                             <constraint firstItem="Yos-5z-WDl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="SL7-3I-GuF"/>
                             <constraint firstAttribute="trailing" secondItem="v9H-eo-wxC" secondAttribute="trailing" constant="20" id="SwS-Bc-UD3"/>
                             <constraint firstItem="vLa-ds-TUH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="XFs-YV-QWp"/>
                             <constraint firstItem="fnc-lX-p63" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="YbW-sN-Kba"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Yos-5z-WDl" secondAttribute="trailing" constant="10" id="bIB-Jm-6NG"/>
-                            <constraint firstItem="Yos-5z-WDl" firstAttribute="top" secondItem="6pp-Zb-U0Q" secondAttribute="bottom" constant="20" id="gm2-eE-fVN"/>
+                            <constraint firstItem="Yos-5z-WDl" firstAttribute="top" secondItem="6pp-Zb-U0Q" secondAttribute="bottom" constant="10" id="gm2-eE-fVN"/>
                             <constraint firstItem="v9H-eo-wxC" firstAttribute="top" secondItem="fnc-lX-p63" secondAttribute="bottom" constant="10" id="jUe-Gd-CLM"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6pp-Zb-U0Q" secondAttribute="trailing" constant="10" id="mzb-ss-zxS"/>
                             <constraint firstItem="Jnv-gF-2Ov" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-10" id="o8o-qm-2tO"/>
-                            <constraint firstItem="vLa-ds-TUH" firstAttribute="top" secondItem="Yos-5z-WDl" secondAttribute="bottom" constant="30" id="qGe-Lr-l8Z"/>
+                            <constraint firstItem="vLa-ds-TUH" firstAttribute="top" secondItem="Yos-5z-WDl" secondAttribute="bottom" constant="20" id="qGe-Lr-l8Z"/>
                             <constraint firstItem="v9H-eo-wxC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="u2G-hb-CC1"/>
                             <constraint firstAttribute="bottom" secondItem="vLa-ds-TUH" secondAttribute="bottom" constant="-41" id="ymP-II-bqg"/>
                         </constraints>
