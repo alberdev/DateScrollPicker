@@ -1,5 +1,5 @@
 <p align="center">
-   <img width="300" src="https://raw.githubusercontent.com/alberdev/DateScrollPicker/master/Images/header_DateScrollPicker.png" alt="DateScrollPicker  Logo">
+   <img width="500" src="https://raw.githubusercontent.com/alberdev/DateScrollPicker/master/Images/header_DateScrollPicker.png" alt="DateScrollPicker  Logo">
 </p>
 
 # DateScrollPicker
