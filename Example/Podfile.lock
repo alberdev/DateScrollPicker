@@ -1,0 +1,16 @@
+PODS:
+  - DateScrollPicker (1.0.0)
+
+DEPENDENCIES:
+  - DateScrollPicker (from `../`)
+
+EXTERNAL SOURCES:
+  DateScrollPicker:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  DateScrollPicker: 27f11ce6213d69c6c64ba83a823f348642b2aa6f
+
+PODFILE CHECKSUM: c24bf58c0465fe9acaa42046819f831bed4a7f85
+
+COCOAPODS: 1.8.4

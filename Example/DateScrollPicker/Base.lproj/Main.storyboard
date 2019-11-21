@@ -1,30 +1,142 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1AJ-1c-u4I">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Volte-Regular2.otf">
+            <string>Volte-Regular2</string>
+        </array>
+        <array key="Volte-Regular3.otf">
+            <string>Volte-Regular3</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="ufC-wZ-h7g">
+        <!--Navigation Controller-->
+        <scene sceneID="hck-Jc-RaH">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="DateScrollPicker_Example" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <navigationController id="1AJ-1c-u4I" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="PIL-gJ-993">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="6g6-ae-Gbj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yuK-ev-tDn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-690" y="138"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DateScrollPicker_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jnv-gF-2Ov" customClass="DateScrollPicker" customModule="DateScrollPicker">
+                                <rect key="frame" x="10" y="190" width="394" height="100"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="GyC-9t-TU2"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DateScrollPicker" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fnc-lX-p63">
+                                <rect key="frame" x="20" y="88" width="228.5" height="30"/>
+                                <fontDescription key="fontDescription" name="Volte-Regular3" family="Volte " pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="With DateScrollPicker you can scroll and select days. Implement delegate methods and get slider events. Fully customizable!!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v9H-eo-wxC">
+                                <rect key="frame" x="20" y="128" width="374" height="42"/>
+                                <fontDescription key="fontDescription" name="Volte-Regular2" family="Volte " pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6pp-Zb-U0Q" customClass="DateScrollPicker" customModule="DateScrollPicker">
+                                <rect key="frame" x="10" y="310" width="394" height="100"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Hrd-o0-q8Z"/>
+                                </constraints>
+                            </view>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yos-5z-WDl" customClass="DateScrollPicker" customModule="DateScrollPicker">
+                                <rect key="frame" x="10" y="430" width="394" height="60"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="im9-bc-aFd"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vLa-ds-TUH">
+                                <rect key="frame" x="0.0" y="520" width="414" height="417"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13 de Abril de 2019" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XGi-Kh-VOo">
+                                        <rect key="frame" x="8" y="27" width="398" height="24"/>
+                                        <fontDescription key="fontDescription" name="Volte-Regular3" family="Volte " pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="txd-tX-smq" customClass="DateScrollPicker" customModule="DateScrollPicker">
+                                        <rect key="frame" x="10" y="70" width="394" height="120"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="120" id="3gS-Iu-dJG"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="XGi-Kh-VOo" firstAttribute="top" secondItem="vLa-ds-TUH" secondAttribute="top" constant="27" id="5bz-UB-GTr"/>
+                                    <constraint firstItem="txd-tX-smq" firstAttribute="leading" secondItem="vLa-ds-TUH" secondAttribute="leading" constant="10" id="6lm-EV-jPX"/>
+                                    <constraint firstItem="XGi-Kh-VOo" firstAttribute="leading" secondItem="vLa-ds-TUH" secondAttribute="leading" constant="8" id="9tI-MM-wbr"/>
+                                    <constraint firstAttribute="trailing" secondItem="txd-tX-smq" secondAttribute="trailing" constant="10" id="LoW-j4-TTh"/>
+                                    <constraint firstItem="txd-tX-smq" firstAttribute="top" secondItem="XGi-Kh-VOo" secondAttribute="bottom" constant="19" id="bFk-Tu-YvZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="XGi-Kh-VOo" secondAttribute="trailing" constant="8" id="geg-6L-wYe"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Jnv-gF-2Ov" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="9Gf-V3-4dZ"/>
+                            <constraint firstItem="6pp-Zb-U0Q" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="BVI-Ja-LNd"/>
+                            <constraint firstItem="vLa-ds-TUH" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="HoP-HC-OLe"/>
+                            <constraint firstItem="fnc-lX-p63" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="JJD-Up-6ee"/>
+                            <constraint firstItem="6pp-Zb-U0Q" firstAttribute="top" secondItem="Jnv-gF-2Ov" secondAttribute="bottom" constant="20" id="Kl2-Om-dtY"/>
+                            <constraint firstItem="Jnv-gF-2Ov" firstAttribute="top" secondItem="v9H-eo-wxC" secondAttribute="bottom" constant="20" id="PBE-qX-0Xe"/>
+                            <constraint firstItem="Yos-5z-WDl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="SL7-3I-GuF"/>
+                            <constraint firstAttribute="trailing" secondItem="v9H-eo-wxC" secondAttribute="trailing" constant="20" id="SwS-Bc-UD3"/>
+                            <constraint firstItem="vLa-ds-TUH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="XFs-YV-QWp"/>
+                            <constraint firstItem="fnc-lX-p63" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="YbW-sN-Kba"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Yos-5z-WDl" secondAttribute="trailing" constant="10" id="bIB-Jm-6NG"/>
+                            <constraint firstItem="Yos-5z-WDl" firstAttribute="top" secondItem="6pp-Zb-U0Q" secondAttribute="bottom" constant="20" id="gm2-eE-fVN"/>
+                            <constraint firstItem="v9H-eo-wxC" firstAttribute="top" secondItem="fnc-lX-p63" secondAttribute="bottom" constant="10" id="jUe-Gd-CLM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6pp-Zb-U0Q" secondAttribute="trailing" constant="10" id="mzb-ss-zxS"/>
+                            <constraint firstItem="Jnv-gF-2Ov" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-10" id="o8o-qm-2tO"/>
+                            <constraint firstItem="vLa-ds-TUH" firstAttribute="top" secondItem="Yos-5z-WDl" secondAttribute="bottom" constant="30" id="qGe-Lr-l8Z"/>
+                            <constraint firstItem="v9H-eo-wxC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="u2G-hb-CC1"/>
+                            <constraint firstAttribute="bottom" secondItem="vLa-ds-TUH" secondAttribute="bottom" constant="-41" id="ymP-II-bqg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Fvu-Jj-izu"/>
+                    <connections>
+                        <outlet property="dateScrollPicker" destination="Jnv-gF-2Ov" id="Os4-KE-Q4K"/>
+                        <outlet property="dateScrollPicker2" destination="6pp-Zb-U0Q" id="eJj-wV-Yms"/>
+                        <outlet property="dateScrollPicker3" destination="Yos-5z-WDl" id="MHR-fz-e4e"/>
+                        <outlet property="dateScrollPicker4" destination="txd-tX-smq" id="4kQ-3X-Ekw"/>
+                        <outlet property="detailDateLabel" destination="XGi-Kh-VOo" id="2OW-mK-KcC"/>
+                        <outlet property="detailView" destination="vLa-ds-TUH" id="axl-pa-iO6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
         </scene>
     </scenes>
 </document>

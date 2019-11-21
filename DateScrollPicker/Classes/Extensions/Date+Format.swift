@@ -1,9 +1,9 @@
 //
-//  Date+Format.swift
-//  DateScrollPicker_Example
+//  Date+Tools.swift
+//  DateScrollPicker
 //
-//  Created by Alberto Aznar de los Ríos on 21/11/2019.
-//  Copyright © 2019 CocoaPods. All rights reserved.
+//  Created by Alberto Aznar de los Ríos on 13/11/2019.
+//  Copyright © 2019 Alberto Aznar de los Ríos. All rights reserved.
 //
 
 import Foundation
@@ -16,3 +16,5 @@ extension Date {
         return dateFormatter.string(from: self)
     }
 }
+
+

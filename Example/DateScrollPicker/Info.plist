@@ -35,5 +35,15 @@
 		<string>UIInterfaceOrientationPortrait</string>
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Volte-Bold.otf</string>
+		<string>Volte-Regular.otf</string>
+		<string>Volte-Regular2.otf</string>
+		<string>Volte-Regular3.otf</string>
+		<string>Volte-Regular4.otf</string>
+	</array>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<true/>
 </dict>
 </plist>
