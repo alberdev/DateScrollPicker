@@ -13,7 +13,7 @@ s.ios.deployment_target = '10.0'
 s.name              = 'DateScrollPicker'
 s.summary           = 'Fully customizable date scroll view with picker feature for iOS written in Swift 5'
 s.description       = 'DateScrollPicker create a view with a UICollectionView. This collection has infinite cells with dates. You can customize all this cells with your own fonts and colors.'
-s.version           = '1.0.2'
+s.version           = '1.0.3'
 
 # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 

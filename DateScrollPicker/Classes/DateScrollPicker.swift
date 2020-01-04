@@ -73,16 +73,17 @@ open class DateScrollPicker: UIView {
     }
     
     private func setupInitialDays() {
-        let monthStartDate = Date().firstDateOfMonth()
-        let monthEndDate = monthStartDate.addMonth(1)!
+        let monthStartDate = Date().firstDateOfMonth().addMonth(-12)!
+        let monthEndDate = Date().firstDateOfMonth().addMonth(12)!
         var currentDate = monthStartDate
         
-        dateItems.append(DateScrollItem(date: currentDate, selected: false, separator: true))
         while currentDate < monthEndDate {
+            if currentDate == currentDate.firstDateOfMonth() {
+                dateItems.append(DateScrollItem(date: currentDate, selected: false, separator: true))
+            }
             dateItems.append(DateScrollItem(date: currentDate, selected: false, separator: false))
             currentDate = currentDate.addDays(1)!
         }
-        dateItems.append(DateScrollItem(date: monthEndDate, selected: false, separator: true))
     }
     
     private func setupCollection() {
