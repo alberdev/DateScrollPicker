@@ -17,6 +17,13 @@ extension Date {
         return today!
     }
     
+    func plain() -> Date {
+        let cal = NSCalendar.current
+        let components = cal.dateComponents([.year, .month, .day], from: self)
+        let plain = cal.date(from: components)
+        return plain!
+    }
+    
     func firstDateOfMonth() -> Date {
         let calendar = Calendar.current
         let components = calendar.dateComponents([.year, .month], from: self)

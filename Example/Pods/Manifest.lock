@@ -1,5 +1,5 @@
 PODS:
-  - DateScrollPicker (1.0.3)
+  - DateScrollPicker (1.1.0)
 
 DEPENDENCIES:
   - DateScrollPicker (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  DateScrollPicker: 5e7eda14843b92881094f5fda53e355567159342
+  DateScrollPicker: 95cbb220b28a5dd95c97018dd278c074842c7e21
 
 PODFILE CHECKSUM: c24bf58c0465fe9acaa42046819f831bed4a7f85
 

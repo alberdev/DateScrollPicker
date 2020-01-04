@@ -103,8 +103,14 @@ extension DateScrollPicker: DateScrollPickerInterface {
         selectDate(Date.today(), animated: animated)
     }
     
-    open func scrollToDate(date: Date, animated: Bool? = nil) {
-        guard let indexPath = indexPath(date: date) else { return }
+    open func selectDate(_ date: Date, animated: Bool? = nil) {
+        guard let indexPath = indexPath(date: date.plain()) else { return }
+        selectItemAt(indexPath)
+        scrollToDate(dateItems[indexPath.item].date, animated: animated)
+    }
+    
+    open func scrollToDate(_ date: Date, animated: Bool? = nil) {
+        guard let indexPath = indexPath(date: date.plain()) else { return }
         collectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: animated ?? true)
     }
 }
@@ -116,12 +122,6 @@ extension DateScrollPicker {
     private func indexPath(date: Date) -> IndexPath? {
         guard let index = dateItems.firstIndex(where: {$0.date == date && $0.separator == false }) else { return nil }
         return IndexPath(item: index, section: 0)
-    }
-    
-    private func selectDate(_ date: Date, animated: Bool? = nil) {
-        guard let indexPath = indexPath(date: date) else { return }
-        selectItemAt(indexPath)
-        scrollToDate(date: dateItems[indexPath.item].date, animated: animated)
     }
     
     private func selectItemAt(_ indexPath: IndexPath) {

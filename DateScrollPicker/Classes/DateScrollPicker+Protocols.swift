@@ -142,11 +142,20 @@ public protocol DateScrollPickerInterface {
     
     /**
      ------------------------------------------------------------------------------------------
-     Scroll to current date
+     Scroll to current date with selection
      ------------------------------------------------------------------------------------------
      - parameter animated: animation enabled
      */
     func selectToday(animated: Bool?)
+    
+    /**
+     ------------------------------------------------------------------------------------------
+     Scroll to date with selection
+     ------------------------------------------------------------------------------------------
+     - parameter date: date to scroll
+     - parameter animated: animation enabled
+     */
+    func selectDate(_ date: Date, animated: Bool?)
     
     /**
      ------------------------------------------------------------------------------------------
@@ -155,5 +164,5 @@ public protocol DateScrollPickerInterface {
      - parameter date: date to scroll
      - parameter animated: animation enabled
      */
-    func scrollToDate(date: Date, animated: Bool?)
+    func scrollToDate(_ date: Date, animated: Bool?)
 }
