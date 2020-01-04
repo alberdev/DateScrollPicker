@@ -36,7 +36,14 @@ open class DateScrollPicker: UIView {
     /// //////////////////////////////////////////////////////////////////////////
     /// Object that configure `DateScrollPicker` view. You can setup `DateScrollPicker` with
     /// your own parameters. See also `DateScrollPickerFormat` implementation.
-    open var format = DateScrollPickerFormat()
+    open var format = DateScrollPickerFormat() {
+        didSet {
+            if !format.separatorEnabled {
+                dateItems = dateItems.filter({ $0.separator == false })
+                collectionView.reloadData()
+            }
+        }
+    }
     
     
     override init(frame: CGRect) {
@@ -50,7 +57,7 @@ open class DateScrollPicker: UIView {
     }
     
     open override func draw(_ rect: CGRect) {
-        selectToday(animated: false)
+        // selectToday(animated: false)
     }
     
     private func commonInit() {
@@ -70,16 +77,12 @@ open class DateScrollPicker: UIView {
         let monthEndDate = monthStartDate.addMonth(1)!
         var currentDate = monthStartDate
         
-        if format.separatorEnabled {
-            dateItems.append(DateScrollItem(date: currentDate, selected: false, separator: true))
-        }
+        dateItems.append(DateScrollItem(date: currentDate, selected: false, separator: true))
         while currentDate < monthEndDate {
-            dateItems.append(DateScrollItem(date: currentDate, selected: currentDate == Date.today(), separator: false))
+            dateItems.append(DateScrollItem(date: currentDate, selected: false, separator: false))
             currentDate = currentDate.addDays(1)!
         }
-        if format.separatorEnabled {
-            dateItems.append(DateScrollItem(date: monthEndDate, selected: false, separator: true))
-        }
+        dateItems.append(DateScrollItem(date: monthEndDate, selected: false, separator: true))
     }
     
     private func setupCollection() {
@@ -96,7 +99,7 @@ open class DateScrollPicker: UIView {
 extension DateScrollPicker: DateScrollPickerInterface {
     
     open func selectToday(animated: Bool? = nil) {
-        selectDate(Date.today())
+        selectDate(Date.today(), animated: animated)
     }
     
     open func scrollToDate(date: Date, animated: Bool? = nil) {
@@ -110,14 +113,14 @@ extension DateScrollPicker: DateScrollPickerInterface {
 extension DateScrollPicker {
     
     private func indexPath(date: Date) -> IndexPath? {
-        guard let index = dateItems.firstIndex(where: {$0.date == date}) else { return nil }
+        guard let index = dateItems.firstIndex(where: {$0.date == date && $0.separator == false }) else { return nil }
         return IndexPath(item: index, section: 0)
     }
     
-    private func selectDate(_ date: Date) {
+    private func selectDate(_ date: Date, animated: Bool? = nil) {
         guard let indexPath = indexPath(date: date) else { return }
         selectItemAt(indexPath)
-        scrollToDate(date: dateItems[indexPath.item].date)
+        scrollToDate(date: dateItems[indexPath.item].date, animated: animated)
     }
     
     private func selectItemAt(_ indexPath: IndexPath) {

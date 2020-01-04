@@ -31,6 +31,11 @@ class ViewController: UIViewController {
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        // goToday()
+    }
 }
 
 // HANDLERS
@@ -38,10 +43,7 @@ class ViewController: UIViewController {
 extension ViewController {
     
     @objc func didPressTodayButton(_ sender: UIButton) {
-        dateScrollPicker.selectToday()
-        dateScrollPicker2.selectToday()
-        dateScrollPicker3.selectToday()
-        dateScrollPicker4.selectToday()
+        goToday()
     }
 }
 
@@ -157,9 +159,17 @@ extension ViewController {
         format.separatorBackgroundColor = UIColor.white.withAlphaComponent(0.3)
         format.separatorTopFont = UIFont(name: "Volte-Regular3", size: 22)!
         format.separatorTopFont = UIFont(name: "Volte-Regular2", size: 20)!
+        format.separatorEnabled = false
         dateScrollPicker4.format = format
         dateScrollPicker4.delegate = self
         dateScrollPicker4.dataSource = self
+    }
+    
+    private func goToday() {
+        dateScrollPicker.selectToday()
+        dateScrollPicker2.selectToday()
+        dateScrollPicker3.selectToday()
+        dateScrollPicker4.selectToday()
     }
 }
 

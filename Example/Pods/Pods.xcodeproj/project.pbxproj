@@ -46,13 +46,13 @@
 		1308EA73762A92797553A86C62801DA0 /* DateScrollPicker-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DateScrollPicker-Info.plist"; sourceTree = "<group>"; };
 		187E69C7E4B711C577961D9BD17C7568 /* UIView+Nib.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+Nib.swift"; sourceTree = "<group>"; };
 		1D12319AA8A44309AB2E1059643501FD /* DateScrollPicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DateScrollPicker-prefix.pch"; sourceTree = "<group>"; };
-		24A604FF352C491470D847451B972E4F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		24A604FF352C491470D847451B972E4F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		25092332D44E5B9738475635DA075A40 /* DateViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = DateViewCell.xib; sourceTree = "<group>"; };
 		25E8A70501951F0D88B8515CD14218D1 /* Pods-DateScrollPicker_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DateScrollPicker_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		26965BFDD73AA96443A0EC95B4F990A4 /* Pods-DateScrollPicker_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DateScrollPicker_Example-frameworks.sh"; sourceTree = "<group>"; };
 		312B988EF117AE4DE76A268D970131FE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		3A30C6264D378E67DB34B165C8635C57 /* DateScrollPickerFormat.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateScrollPickerFormat.swift; path = DateScrollPicker/Classes/DateScrollPickerFormat.swift; sourceTree = "<group>"; };
-		3B81C4D1DE2D670414047458E9480F23 /* DateScrollPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DateScrollPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B81C4D1DE2D670414047458E9480F23 /* DateScrollPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DateScrollPicker.framework; path = DateScrollPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C9478A8D87DD7D23F3EE5FDF6B28081 /* DateScrollPicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DateScrollPicker.modulemap; sourceTree = "<group>"; };
 		436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		4435EE43D77B5FD504BA6B270ECA97A3 /* DateInsertType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateInsertType.swift; path = DateScrollPicker/Classes/DateInsertType.swift; sourceTree = "<group>"; };
@@ -65,22 +65,22 @@
 		79AF1E6B8900743BF963E020D07D0ECD /* DateScrollManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateScrollManager.swift; path = DateScrollPicker/Classes/DateScrollManager.swift; sourceTree = "<group>"; };
 		85E53B94807918D4F33282DD56BCC0A9 /* Pods-DateScrollPicker_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DateScrollPicker_Example.modulemap"; sourceTree = "<group>"; };
 		867276E129B5EEFC581C7BAE5C0E9168 /* DateScrollPicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DateScrollPicker-dummy.m"; sourceTree = "<group>"; };
-		92320F864BFDA7F6BC0ECC4B0287F222 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		92320F864BFDA7F6BC0ECC4B0287F222 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		968AF00D3064047269686CA17911629B /* DateScrollPicker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DateScrollPicker.xcconfig; sourceTree = "<group>"; };
 		9B257B718990AD85C596D8733B0093D6 /* Pods-DateScrollPicker_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DateScrollPicker_Example-umbrella.h"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A307479E9A43202974F589572145E2C5 /* UICollectionView+Fade.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Fade.swift"; sourceTree = "<group>"; };
 		B11C7B60046FC2A33609D0F22F955E50 /* SeparatorViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = SeparatorViewCell.xib; sourceTree = "<group>"; };
 		BB3FECDFCBE3B49EFB7D36B207254B43 /* DateScrollItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateScrollItem.swift; path = DateScrollPicker/Classes/DateScrollItem.swift; sourceTree = "<group>"; };
 		C183223BCA59BD28D705FB9F72FD509F /* Pods-DateScrollPicker_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DateScrollPicker_Example-dummy.m"; sourceTree = "<group>"; };
 		C1BF5E721A30BDCFF93607BCA3116F8E /* DateViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DateViewCell.swift; sourceTree = "<group>"; };
 		C1E460B40E72A1A2F8229755C00210BC /* Pods-DateScrollPicker_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DateScrollPicker_Example-Info.plist"; sourceTree = "<group>"; };
-		C7C324C43D0998960E151365EC2A4446 /* DateScrollPicker.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = DateScrollPicker.podspec; sourceTree = "<group>"; tabWidth = 2; };
+		C7C324C43D0998960E151365EC2A4446 /* DateScrollPicker.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = DateScrollPicker.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		C8A802E4A726EED41C565A06594E3DAA /* SeparatorViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SeparatorViewCell.swift; sourceTree = "<group>"; };
 		D15777927D1A5BBD6D57C56B7DC751CD /* Pods-DateScrollPicker_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DateScrollPicker_Example.release.xcconfig"; sourceTree = "<group>"; };
 		E993C0133B8B488EA906E48CAF454CC0 /* Pods-DateScrollPicker_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DateScrollPicker_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		ED58E7CA06138D06632C6ACBFF68B025 /* UICollectionViewCell+Fade.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+Fade.swift"; sourceTree = "<group>"; };
-		F6732D905ACF77CB31EA355C9190FA06 /* Pods_DateScrollPicker_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DateScrollPicker_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6732D905ACF77CB31EA355C9190FA06 /* Pods_DateScrollPicker_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DateScrollPicker_Example.framework; path = "Pods-DateScrollPicker_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9DDA6E40AD3E02199F1FCB7DDC6E21C /* DateScrollPicker.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = DateScrollPicker.xib; path = DateScrollPicker/Classes/DateScrollPicker.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -607,7 +607,8 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
