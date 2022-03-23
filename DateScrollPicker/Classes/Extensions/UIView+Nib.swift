@@ -11,9 +11,15 @@ import UIKit
 extension UIView {
     
     func fromNib<T : UIView>() -> T? {
+#if SPM
+        guard let contentView = Bundle.module.loadNibNamed(String(describing: type(of: self)), owner: self, options: nil)?.first as? T else {
+            return nil
+        }
+#else
         guard let contentView = Bundle(for: type(of: self)).loadNibNamed(String(describing: type(of: self)), owner: self, options: nil)?.first as? T else {
             return nil
         }
+#endif
         self.addSubview(contentView)
         contentView.translatesAutoresizingMaskIntoConstraints = false
         contentView.fixConstraintsInView(self)

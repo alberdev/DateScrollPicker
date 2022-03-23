@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="DateViewCell" customModule="DateScrollPicker" customModuleProvider="target">
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="DateViewCell" customModule="DateScrollPicker">
             <rect key="frame" x="0.0" y="0.0" width="127" height="195"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -52,7 +53,7 @@
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oa5-VX-AHM">
                                                 <rect key="frame" x="0.0" y="2.5" width="10" height="10"/>
-                                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" systemColor="systemGreenColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="10" id="bsK-rs-xHy"/>
                                                     <constraint firstAttribute="width" secondItem="Oa5-VX-AHM" secondAttribute="height" multiplier="1:1" id="hy1-b5-xiQ"/>
@@ -89,7 +90,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="8Pz-rE-iXF" firstAttribute="centerY" secondItem="dMl-YE-Flt" secondAttribute="centerY" id="44F-b8-OnO"/>
                             <constraint firstItem="8Pz-rE-iXF" firstAttribute="leading" secondItem="dMl-YE-Flt" secondAttribute="leading" id="pVX-Uz-WSD"/>
@@ -98,13 +99,13 @@
                     </view>
                 </subviews>
             </view>
+            <viewLayoutGuide key="safeArea" id="o0u-YV-KFb"/>
             <constraints>
                 <constraint firstItem="dMl-YE-Flt" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="JyU-nL-pn9"/>
                 <constraint firstAttribute="bottom" secondItem="dMl-YE-Flt" secondAttribute="bottom" constant="10" id="M3V-uD-wOU"/>
                 <constraint firstAttribute="trailing" secondItem="dMl-YE-Flt" secondAttribute="trailing" constant="10" id="m85-vD-nfH"/>
                 <constraint firstItem="dMl-YE-Flt" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="ojD-V4-B4m"/>
             </constraints>
-            <viewLayoutGuide key="safeArea" id="o0u-YV-KFb"/>
             <size key="customSize" width="127" height="195"/>
             <connections>
                 <outlet property="bottomContainerConstraint" destination="M3V-uD-wOU" id="dKA-uJ-8JC"/>
@@ -123,4 +124,12 @@
             <point key="canvasLocation" x="177.536231884058" y="196.54017857142856"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

@@ -8,7 +8,7 @@
 
 import UIKit
 
-public protocol DateScrollPickerDataSource: class {
+public protocol DateScrollPickerDataSource: AnyObject {
     
     /**
      ------------------------------------------------------------------------------------------
@@ -119,7 +119,7 @@ public extension DateScrollPickerDataSource {
     }
 }
 
-public protocol DateScrollPickerDelegate: class {
+public protocol DateScrollPickerDelegate: AnyObject {
     
     /**
     ------------------------------------------------------------------------------------------

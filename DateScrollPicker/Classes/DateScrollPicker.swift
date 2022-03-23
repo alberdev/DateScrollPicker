@@ -87,7 +87,11 @@ open class DateScrollPicker: UIView {
     }
     
     private func setupCollection() {
+#if SPM
+        let bundle = Bundle.module
+#else
         let bundle = Bundle(for: self.classForCoder)
+#endif
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.register(UINib(nibName: "DateViewCell", bundle: bundle), forCellWithReuseIdentifier: "DateViewCell")
